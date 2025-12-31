@@ -1,0 +1,29 @@
+if (window.innerWidth <= 1000) {
+  const track = document.querySelector(".slider-track");
+  const slides = document.querySelectorAll(".slide");
+  const next = document.getElementById("next");
+  const prev = document.getElementById("prev");
+
+  let index = 2;
+
+  function updateSlider() {
+    slides.forEach((s, i) => s.classList.toggle("is-active", i === index));
+
+    const slideWidth = window.innerWidth * 0.68;
+    const gap = window.innerWidth * 0.024;
+    const offset = index * (slideWidth + gap) - (window.innerWidth - slideWidth) / 2;
+    track.style.transform = `translateX(${-offset}px)`;
+  }
+
+  next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateSlider();
+  });
+
+  prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSlider();
+  });
+
+  updateSlider();
+}
