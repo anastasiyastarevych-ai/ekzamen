@@ -1,0 +1,35 @@
+if (window.innerWidth >= 1000) {
+  const track = document.querySelector(".slider-track");
+  const slides = document.querySelectorAll(".slide");
+  const next = document.getElementById("next");
+  const prev = document.getElementById("prev");
+
+  let index = 2;
+
+  function updateSliderDesktop() {
+    const total = slides.length;
+    slides.forEach((s, i) => {
+      const offset = (i - index + total) % total;
+      s.classList.toggle("is-active", offset === 0);
+    });
+
+    const active = track.children[index];
+    const wrapperWidth = track.parentElement.clientWidth;
+    const activeLeft = active.offsetLeft;
+    const activeWidth = active.clientWidth;
+
+    track.style.transform = `translateX(${wrapperWidth / 2 - activeLeft - activeWidth / 2}px)`;
+  }
+
+  next.addEventListener("click", () => {
+    index = (index + 1) % slides.length;
+    updateSliderDesktop();
+  });
+
+  prev.addEventListener("click", () => {
+    index = (index - 1 + slides.length) % slides.length;
+    updateSliderDesktop();
+  });
+
+  updateSliderDesktop();
+}
