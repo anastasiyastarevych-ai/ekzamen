@@ -1,0 +1,231 @@
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Brewed to perfection</title>
+  <link rel="stylesheet" href="екз2.css">
+</head>
+<body>
+
+<header class="top-header">
+  <img src="лого.avif" alt="Latte logo" class="top-logo-img">
+  <div class="nav-box">
+    <span>Menu</span>
+    <span>News</span>
+  </div>
+</header>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="rating">
+    Google:
+    <img src="зірка.png" class="star">
+    <img src="зірка.png" class="star">
+    <img src="зірка.png" class="star">
+    <img src="зірка.png" class="star">
+    <img src="зірка.png" class="star">
+    <span class="score">(4.9)</span>
+  </div>
+
+  <h1>Brewed to perfection</h1>
+
+  <p class="hero-desc">
+    Your perfect spot for coffee,
+    pastries, and more.
+  </p>
+
+  <button class="btn">Explore menu</button>
+
+  <div class="slider-wrapper">
+    <button class="arrow left" id="prev">‹</button>
+
+    <div class="slider-track">
+      <img src="капут глечик.avif" class="slide is-active">
+      <img src="маршмелоу.avif" class="slide">
+      <img src="капут з пінквіт.avif" class="slide">
+      <img src="кавярня лист.avif" class="slide">
+      <img src="рестік.avif" class="slide">
+    </div>
+
+    <button class="arrow right" id="next">›</button>
+  </div>
+</header>
+
+<!-- MENU -->
+<section class="menu">
+  <div class="Our-Menu">
+    <h2>Our Menu</h2>
+  </div>
+
+  <!-- Coffee -->
+  <div class="menu-card">
+    <div class="text-box">
+      <h3 class="book-title">Coffee</h3>
+      <ul class="descr-list">
+        <li><strong>Espresso</strong> <div class="sale">$2.50</div><span>Rich and bold single shot of espresso.</span></li>
+        <li><strong>Americano</strong> <div class="sale">$3.00</div><span>Espresso with hot water for a smooth, robust flavor.</span></li>
+        <li><strong>Latte</strong> <div class="sale">$4.00</div><span>Espresso with steamed milk and a light layer of foam.<br>
+          Flavors: Vanilla, Caramel, Hazelnut, Mocha.</span></li>
+        <li><strong>Cappuccino</strong> <div class="sale">$4.00</div><span>Equal parts espresso, steamed milk, and foam.</span></li>
+        <li><strong>Flat White</strong> <div class="sale">$4.00</div><span>Silky microfoam over a double shot of espresso.</span></li>
+        <li><strong>Macchiato</strong> <div class="sale">$4.00</div><span>Espresso marked with a dollop of frothy steamed milk.</span></li>
+        <li><strong>Mocha</strong> <div class="sale">$4.00</div><span>Espresso, steamed milk, and rich chocolate syrup, topped with whipped cream.</span></li>
+        <li><strong>Cold Brew</strong> <div class="sale">$4.00</div><span>Smooth and refreshing cold-brewed coffee, served over ice.</span></li>
+      </ul>
+    </div>
+    <div class="img-box">
+      <div class="img-label">Latte</div>
+      <img class="sect-img" src="капут з пінквіт.avif" alt="Coffee">
+    </div>
+  </div>
+
+  <!-- Specialty Lattes -->
+  <div class="menu-card">
+    <div class="text-box">
+      <h3 class="book-title">Specialty Lattes</h3>
+      <ul class="descr-list">
+        <li><strong>Matcha Latte</strong> <div class="sale">$4.50</div><span>Ceremonial grade matcha blended with steamed milk.</span></li>
+        <li><strong>Turmeric Latte</strong> <div class="sale">$4.50</div><span>Turmeric, ginger, and cinnamon blended with steamed milk for a healthy boost.</span></li>
+        <li><strong>Chai Latte</strong> <div class="sale">$4.00</div><span>Spiced chai tea blended with steamed milk.</span></li>
+        <li><strong>Honey Lavender Latte</strong> <div class="sale">$5.00</div><span>Espresso, steamed milk, honey, and a hint of lavender.</span></li>
+      </ul>
+    </div>
+    <div class="img-box">
+      <div class="img-label">Chai Latte</div>
+      <img class="sect-img" src="капут глечик.avif" alt="Specialty Lattes">
+    </div>
+  </div>
+
+  <!-- Tea & Other Beverages -->
+  <div class="menu-card">
+    <div class="text-box">
+        <h3 class="book-title">Tea & Other Beverages</h3>
+        <ul class="descr-list">
+        <li><strong>Tea</strong> <div class="sale">$3.00</div><span>Selection of black, green, and herbal teas.</span></li>
+        <li><strong>Hot Chocolate</strong> <div class="sale">$4.50</div><span>Rich and creamy hot chocolate, topped with whipped cream.</span></li>
+        <li><strong>Golden Milk</strong> <div class="sale">$4.00</div><span>Turmeric, ginger, and honey blended with steamed milk.</span></li>
+        <li><strong>Iced Tea</strong> <div class="sale">$5.00</div><span>Freshly brewed and chilled, served over ice.</span></li>
+      </ul>
+    </div>
+    <div class="img-box">
+      <div class="img-label">Hot Chocolate</div>
+      <img class="sect-img" src="маршмелоу.avif" alt="Specialty Lattes">
+    </div>
+  </div>
+
+  <!-- Pastries & Baked Goods -->
+  <div class="menu-card">
+    <div class="text-box">
+      <h3 class="book-title">Pastries & Baked Goods</h3>
+      <ul class="descr-list">
+        <li><strong>Croissant</strong> <div class="sale">$3.00</div><span>Buttery and flaky, baked fresh daily.</span></li>
+        <li><strong>Muffins</strong> <div class="sale">$2.50</div><span>Varieties: Blueberry, Chocolate Chip, Banana Nut.</span></li>
+        <li><strong>Scones</strong> <div class="sale">$4.00</div><span>Varieties: Cranberry Orange, Vanilla Bean.</span></li>
+        <li><strong>Cookies</strong> <div class="sale">$2.00</div><span>Varieties: Chocolate Chip, Oatmeal Raisin, Double Chocolate.</span></li>
+        <li><strong>Brownies</strong> <div class="sale">$3.00</div><span>Rich and fudgy, with a crackly top.</span></li>
+      </ul>
+    </div>
+    <div class="img-box">
+      <div class="img-label">Croissant</div>
+      <img class="sect-img" src="крусАн.avif" alt="Specialty Lattes">
+    </div>
+  </div>
+</section>
+
+<!-- NEWS -->
+<section class="news">
+  <h2>Latest coffee news</h2>
+  <div class="news-cards">
+  <div class="news-card">
+    <img src="кава 2лист.avif" alt="">
+    <span class="date">Mar 15, 2024</span>
+    <h3>Exploring the World of Coffee Origins</h3>  
+  </div>
+
+  <div class="news-card">
+    <img src="наливають.avif" alt="">
+    <span class="date">Feb 28, 2024</span>
+    <h3>5 Ways to Elevate Your Coffee Experience at Home</h3>
+  </div>
+
+  <div class="news-card">
+    <img src="капут з лист.avif" alt="">
+    <span class="date">Feb 6, 2024</span>
+    <h3>Eco-Friendly Practices at Latee Haven</h3>
+  </div>
+  </div>
+
+</section>
+
+<!-- ABOUT / LATTE HAVEN -->
+<section class="about">
+  <div class="about-inner">
+    <img src="кавярня лист.avif" alt="Latte Haven Logo" class="about-logo">
+    <img src="лого.avif" alt="Latte Haven Logo" class="logo">
+    <h2>We love coffee</h2>
+    <p>
+      Latte Haven is a cozy and welcoming spot in the heart of the city, <br>
+      offering a delightful selection of specialty coffees, fresh pastries, and <br>
+      wholesome meals.
+      <br><br>
+      Join us for a moment of relaxation and indulgence.
+    </p>
+
+    <div class="address">
+      <strong>Location:</strong><br>
+      Latte Haven<br>
+      123 Latte Lane<br>
+      Food City, FC 12345
+    </div>
+
+    <button class="btn">Explore menu</button>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="site-footer">
+  <div class="footer-inner">
+    <img src="лого.avif" alt="Latte Haven Logo" class="logo2">
+    <h2 class="footer-title">Brewed to perfection</h2>
+
+    <div class="footer-grid">
+      <div class="footer-col">
+        <h3>Opening hours:</h3>
+        <p>Mon - Thu: 11:00 AM - 9:00 PM<br>
+           Fri - Sat: 11:00 AM - 10:00 PM<br>
+           Sun: 12:00 PM - 8:00 PM</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Phone:</h3>
+        <p>(555) 987-6543</p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Location:</h3>
+        <p class="p2">Burger Haven<br>
+           123 Burger Lane<br>
+           Food City, FC 12345
+        </p>
+      </div>
+
+      <div class="footer-col socials">
+        <img src="інстаріл.png" alt="Instagram">
+        <img src="фейсбук.png" alt="Facebook">
+        <img src="твітер.png" alt="Twitter">
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p class="p2">&copy; 2024 – Toni Jarvinen @tonjrv</p>
+      <p class="p3">Privacy Policy · Cookies · Terms & Conditions</p>
+    </div>
+  </div>
+</footer>
+
+<script src="екз3.js"></script>
+<script src="екз3.0.js"></script>
+
+</body>
+</html>
